@@ -1,0 +1,8 @@
+# 隐写 sample.txt 到 out.png，自动生成噪声载体并使用压缩
+python3 /storage/emulated/0/Download/QQ/2steganography_ultra.py encode "/storage/emulated/0/Download/QQ/(共15113张图片)诺斯格鲁曼所有军事装备和武器图片.txt" /storage/emulated/0/Download/4out.png
+
+# 使用现有封面图片，并设置密码
+python3 /storage/emulated/0/Download/QQ/2steganography_ultra.py encode /storage/emulated/0/Download/QQ/测试.txt /storage/emulated/0/Download/2out.png -c "/storage/emulated/0/Pictures/Photo Editor/IMG_20250926_052140.png" -p 123456
+
+# 从 out.png 中提取文本到 recovered.txt（如果编码时设置了密码，需要提供）
+python3 /storage/emulated/0/Download/QQ/2steganography_ultra.py decode /storage/emulated/0/Download/4out.png /storage/emulated/0/Download/4recovered.txt 
